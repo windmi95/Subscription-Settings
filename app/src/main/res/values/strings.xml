@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Application02</string>
+    <string name="join_hello">가입을 축하드려요!\n닉네임을 설정해볼까요?</string>
+</resources>
