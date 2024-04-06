@@ -9,6 +9,8 @@
         android:topLeftRadius="7dp"
         android:topRightRadius="7dp"/>
     <stroke
-        android:width="2dp"
-        android:color="@color/black"/>
+        android:width="1.5dp"
+        android:color="@color/hint_border_color"/>
+
+    <solid android:color="@color/hint_color"/>
 </shape>

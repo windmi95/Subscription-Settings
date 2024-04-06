@@ -4,5 +4,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="background_color">#F6F3E9</color>
     <color name="join_color">#333333</color>
+    <color name="hint_color">#EEEBE2</color>
+    <color name="hint_border_color">#777777</color>
     <color name="next_btn_color">#E2E0D7</color>
+    <color name="hint_background_color">#D6D1C1</color>
+    <color name="cursor_color">#FEB229</color>
 </resources>

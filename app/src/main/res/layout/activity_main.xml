@@ -23,7 +23,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="30dp"
-        android:fontFamily="@font/noto_regul"
+        android:fontFamily="@font/noto_re"
         android:textColor="@color/join_color"
         />
 
@@ -36,7 +36,9 @@
         app:layout_constraintStart_toStartOf="@id/가입인사"
         app:layout_constraintEnd_toEndOf="parent"
         android:hint="6자이내/특수문자 입력 불가"
+        android:fontFamily="@font/noto_re"
         android:ems="10"
+        android:textSize="14sp"
         android:minWidth="48dp"
         android:minHeight="48dp"
         android:layout_marginTop="30dp"
@@ -44,10 +46,10 @@
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
         android:layout_marginEnd="30dp"
-        android:drawableLeft="@drawable/shape_drawable"
+        android:textCursorDrawable="@drawable/edit_text_cursor"
         />
     
-    <Button
+    <android.widget.Button
         android:id="@+id/next_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -56,8 +58,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.95"
-        android:background="@color/next_btn_color"
-
+        android:background="@drawable/button_style"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
