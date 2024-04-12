@@ -4,6 +4,7 @@ import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
 import androidx.annotation.DrawableRes;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
@@ -43,20 +44,20 @@ public class MainActivity extends AppCompatActivity {
                 //text가 바뀔 때마다 호출
                 int count = editText.length();
 
-                textView.setText((count)+"/5");
+                textView.setText(count+"/5");
 
 
-                if (count > 0) {
+                if (count > 4) {
                     button.setClickable(true);
-                    button.setBackgroundResource(getResources().getColor(R.color.next_btn_color));
+                    button.setBackgroundColor(ContextCompat.getColor(MainActivity.this,R.color.complete_btn));
 
                 } else {
                     button.setClickable(false);
-                    button.setBackgroundColor(getResources().getColor(R.color.complete_btn));
-                }
+                    button.setBackgroundColor(ContextCompat.getColor(MainActivity.this,R.color.next_btn_color));
 
+                }
                 String input = editText.getText().toString();
-                textView.setText(input.length());
+                textView.setText((input.length())+"/5");
             }
 
             @Override
