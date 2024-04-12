@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@id/가입인사"
         app:layout_constraintStart_toStartOf="@id/가입인사"
         app:layout_constraintEnd_toEndOf="parent"
-        android:hint="6자이내/특수문자 입력 불가"
+        android:hint="@string/ed_hint"
         android:fontFamily="@font/noto_re"
         android:ems="10"
         android:textSize="14sp"
@@ -48,19 +48,24 @@
         android:layout_marginEnd="30dp"
         android:textCursorDrawable="@drawable/edit_text_cursor"
         android:maxLength="5"
+        android:inputType="text"
         />
 
     <TextView
         android:id="@+id/text_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:layout_toEndOf="@id/nickname"
-        android:text="0/5"
+        android:text="@string/tv_text"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@id/가입인사"
+        app:layout_constraintTop_toTopOf="@id/nickname"
+        app:layout_constraintBottom_toBottomOf="@id/nickname"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.811"
-        app:layout_constraintStart_toStartOf="@id/nickname" />
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="@id/nickname"
+        android:fontFamily="@font/noto_re"
+        />
 
     <android.widget.Button
         android:id="@+id/next_btn"
@@ -75,6 +80,8 @@
         tools:ignore="SpeakableTextPresentCheck"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
+        android:textColor="#FFFFFF"
+        android:text="@string/btn_next"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

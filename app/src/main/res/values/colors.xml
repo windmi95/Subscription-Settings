@@ -9,4 +9,6 @@
     <color name="next_btn_color">#E2E0D7</color>
     <color name="hint_background_color">#D6D1C1</color>
     <color name="cursor_color">#FEB229</color>
+    <color name="complete_btn">#7E5100</color>
+
 </resources>

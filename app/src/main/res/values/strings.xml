@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">My Application02</string>
     <string name="join_hello">가입을 축하드려요!\n닉네임을 설정해볼까요?</string>
+    <string name="btn_next">다음</string>
+    <string name="ed_hint">6자이내/특수문자 입력 불가</string>
+    <string name="tv_text">0/5</string>
 </resources>
